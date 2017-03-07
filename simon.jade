@@ -1,0 +1,29 @@
+//output:index.html
+
+html
+  head
+    link(href='simon.min.css' rel='stylesheet')
+    script(src='https://code.jquery.com/jquery-3.1.1.min.js')
+    script(src='simon.js')
+  body
+    div.simon-body
+      div.simon-button.simon-button-green#0
+      div.simon-button.simon-button-red#1
+      div.simon-button.simon-button-blue#2
+      div.simon-button.simon-button-yellow#3 
+      div.simon-controller-container
+        div.simon-controller-panel-container
+          div.simon-controller-panel-top
+            h1 SIMON
+          div.simon-controller-panel-bottom
+            div.buttons
+              div.button.button-start
+                p START
+              div.button.button-reset
+                p RESET
+              div.button.button-strict
+                p STRICT
+            div.on-off
+            div.display
+             p.steps 00
+    

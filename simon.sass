@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One')
+@import url('https://fonts.googleapis.com/css?family=Orbitron')
+
+
+body
+  margin: 0
+  padding: 0
+
+.simon-body
+  height: 800px
+  width: 800px
+  margin: auto
+  margin-top: 6.25%
+  border-radius: 50%
+  background-color: #222
+  position: relative
+
+.simon-button-green
+  height: 365px
+  width: 365px
+  border-top-left-radius: 100%
+  background-color: #007000
+  position: absolute
+  top: 25px
+  left: 25px
+
+.simon-button-red
+  height: 365px
+  width: 365px
+  border-top-right-radius: 100%
+  background-color: #700000
+  position: absolute
+  top: 25px
+  right: 25px
+
+.simon-button-yellow
+  height: 365px
+  width: 365px
+  border-bottom-right-radius: 100%
+  background-color: #707000
+  position: absolute
+  bottom: 25px
+  right: 25px
+
+.simon-button-blue
+  height: 365px
+  width: 365px
+  border-bottom-left-radius: 100%
+  background-color: #000070
+  position: absolute
+  bottom: 25px
+  left: 25px
+
+.simon-controller-container
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  height: 450px
+  width: 450px
+  background-color: #222
+  border-radius: 50%
+
+.simon-controller-panel-container
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  height: 400px
+  width: 400px
+  background-color: #aaa
+  border-radius: 50%
+  overflow: hidden
+
+.simon-controller-panel-top
+  position: absolute
+  top: -45px
+  height: 200px
+  width: 400px
+  border-top-left-radius: 400px
+  border-top-right-radius: 400px
+  background-color: #111
+  h1
+    width: 100%
+    text-align: center
+    position: relative
+    top: 1em
+    font-family: 'Russo One', sans-serif
+    font-size: 4em
+    color: gray
+    letter-spacing: .10em
+
+.simon-controller-panel-bottom
+  position: absolute
+  bottom: 0
+  height: 245px
+  width: 400px
+
+.buttons
+  display: flex
+  position: relative
+  width: 100%
+  justify-content: center
+  .button
+    width: 25%
+    height: 3em
+    border-radius: 5px
+    margin-top: 25px
+    margin-left: 10px
+    margin-right: 10px
+    font-family: 'Russo One', sans-serif
+    color: #111
+    text-align: center
+    border: solid #888 1px
+    border-left-width: 2px
+    border-right-width: 2px
+    border-left-color: #777
+    border-bottom-width: 3px
+    border-bottom-color: #555
+  .button-start
+    background-color: yellow
+  .button-reset
+    background-color: yellow
+  .button-strict
+    background-color: #500000
+    color: #ddd
+
+
+.on-off
+  display: flex
+  position: relative
+
+
+.display
+  height: 50px
+  width: 25%
+  position: absolute
+  left: 37.5%
+  bottom: 15px
+  background-color: #400000
+  border-radius: 5px
+  border: solid #222 2px
+  border-top-width: 3px
+  border-top-color: #111
+  border-bottom-color: #444
+  border-bottom-width: 1px
+  padding-right: 10px
+  .steps
+    width: 100%
+    text-align: right
+    font-family: 'Orbitron', sans-serif
+    font-size: 1.5em
+    line-height: .50em
+    color: #C20000
+
+
+/* Utilities */
+
+.noclick
+  pointer-events: none
+
+.strict-active
+  background-color: #a00000!important
+
+.button-0-active //This just makes the Javascript a little easier
+  background-color: #00b000
+
+.button-1-active
+  background-color: #b00000
+
+.button-3-active
+  background-color: #b0b000
+
+.button-2-active
+  background-color: #0000b0
